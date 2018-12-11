@@ -3,12 +3,17 @@
 //--------------------------------------------------------------------------------
 
 setTimeout(function() {
+      
+      //check if a list of your libguide subjects is displaying
       if ($("#s-lg-index-list").length > 0) {
+            
+            
         $("#s-lg-index-cols")
           .find("div.panel.panel-default")
           .each(function() {
             var guides = $(this).find("ul.s-lg-guide-list > li");
 
+            //check if a subject has only 1 guide attached to it  
             if (guides.length === 1) {
               var newLink = $(this)
                 .find(".panel-collapse")
@@ -28,12 +33,9 @@ setTimeout(function() {
                 .find(".panel-heading")
                 .find("a")
                 .attr("href", newLink);
-            } else {
-              $(this)
-                .find(".badge")
-                .removeClass("badge")
-                .html('<i class="fa fa-chevron-down" aria-hidden="true"></i>');
-            } //end if
+            }  //end if
+              
+              
           });
       } //end if
     }, 1500); //end setTimeout
