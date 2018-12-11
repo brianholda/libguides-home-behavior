@@ -1,4 +1,6 @@
+//--------------------------------------------------------------------------------
 //to create a single click on libguides when there is only 1 guide under a subject
+//--------------------------------------------------------------------------------
 
 setTimeout(function() {
       if ($("#s-lg-index-list").length > 0) {
