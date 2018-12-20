@@ -2,7 +2,8 @@
 //to create a single click on libguides when there is only 1 guide under a subject
 //--------------------------------------------------------------------------------
 
-setTimeout(function() {
+(function () {
+      setTimeout(function() {
       
       //check if a list of your libguide subjects is displaying
       if ($("#s-lg-index-list").length > 0) {
@@ -39,3 +40,4 @@ setTimeout(function() {
           });
       } //end if
     }, 1500); //end setTimeout
+})()
